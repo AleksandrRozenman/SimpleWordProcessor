@@ -33,8 +33,8 @@ class SimpleWordProcessor : Form
 	ColorDialog cDiag;
 	SaveFileDialog sDiag;
 	OpenFileDialog oDiag;
-	bool textChangedFlag;	// True means unsaved changes exist; false means file is up-to-date.
-	string fileName;		// Currently active file; is null if working on a new file that has never been saved.
+	bool textChangedFlag;  // True means unsaved changes exist; false means file is up-to-date.
+	string fileName;       // Currently active file; is null if working on a new file that has never been saved.
 
 	public SimpleWordProcessor() : base()
 	{
@@ -126,7 +126,7 @@ class SimpleWordProcessor : Form
 		miFile.MenuItems.Add(fileOpen);
 		miFile.MenuItems.Add(fileSave);
 		miFile.MenuItems.Add(fileSaveAs);
-		miFile.MenuItems.Add(new MenuItem("-"));	// Separator.
+		miFile.MenuItems.Add(new MenuItem("-"));  // Separator.
 		miFile.MenuItems.Add(fileExit);
 		
 		// Populate "Edit" menu.
